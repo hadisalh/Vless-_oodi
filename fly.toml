@@ -1,12 +1,12 @@
-app = "vless-oodi-app-1"
+app = "vless--oodi"
 primary_region = "fra"
 
 [build]
   dockerfile = "Dockerfile"
 
-[[services]]
+[http_service]
   internal_port = 8080
-  protocol = "tcp"
-
-  [[services.ports]]
-    port = 443
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
