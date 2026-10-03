@@ -1,0 +1,14 @@
+{
+  "inbounds": [
+    {
+      "port": 8080,
+      "protocol": "vless",
+      "settings": {
+        "clients": [{"id": "fb5a3026-f642-4dda-94d0-a94501929e18"}],
+        "decryption": "none"
+      },
+      "streamSettings": {"network": "tcp"}
+    }
+  ],
+  "outbounds": [{"protocol": "freedom"}]
+}
